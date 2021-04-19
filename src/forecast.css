@@ -1,0 +1,34 @@
+.forecast-items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.addtional-forecast {
+    font-weight: 800;
+    text-align: center;
+}
+
+.additional-time,
+.additonal-degree-info,
+.additonal-weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    font-weight: 800;
+    width: 3rem;
+    margin: 0.5rem 0;
+}
+
+
+@media (min-width: 768px) {
+    .forecast-items {
+        justify-content: left;
+        text-align: left;
+
+    }
+
+
+}

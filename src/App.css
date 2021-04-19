@@ -1,0 +1,17 @@
+.App h1 {
+  text-align: center;
+  color: #32364D;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.main-content {
+  flex-direction: row-reverse;
+
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+
+.footer p {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #6F748C;
+    margin: 0;
+}
+
+a {
+    color: #B093FF;
+}

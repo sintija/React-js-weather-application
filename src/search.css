@@ -1,0 +1,38 @@
+.Search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.Search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search .small-message {
+    color: #32364D;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+#inlineFormInputName {
+    border: 3px solid #32364D;
+    background-color: transparent;
+}
+
+.Search .search-button {
+    background-color: #865BFF;
+    font-weight: 700;
+    border: 1px solid #865BFF;
+    margin-top: 1.6rem;
+}
+
+.Search .search-button:hover,
+.Search .search-button:focus,
+.Search .search-button:active {
+    background-color: #29009E !important;
+    border: 1px solid #29009E;
+
+}

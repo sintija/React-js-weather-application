@@ -1,0 +1,19 @@
+.illustration .main-weather-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3.5rem;
+    margin: 2rem 2rem;
+}
+
+@media (min-width: 768px) {
+    .img-fluid {
+        height: 600px;
+        width: 600px;
+        max-width: none;
+    }
+
+    .main-weather-icon {
+        display: none;
+    }
+}
