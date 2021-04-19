@@ -23,8 +23,8 @@ export default function WeatherTemperature(props) {
                 <p className="temperature" id="current-temperature">
                     {fahrenheit()}</p>
                 <span className="temperature-unit measure" id="temperature-meassure">
-                    <a id="degreesCelsius" className="active">°C</a>|
-        <a id="degreesFahr" className="inactive" onClick={showFahrenheit}>°F</a>
+                    <a id="degreesCelsius" href="#" className="active">°C</a>|
+        <a id="degreesFahr" href="#" className="inactive" onClick={showFahrenheit}>°F</a>
                 </span>
             </>
         );
@@ -35,8 +35,8 @@ export default function WeatherTemperature(props) {
             <p className="temperature" id="current-temperature">
                 {props.temperature}</p>
             <span className="temperature-unit measure" id="temperature-meassure">
-                <a id="degreesCelsius" className="inactive" onClick={showCelsius}>°C</a>|
-        <a id="degreesFahr" className="active" >°F</a>
+                <a id="degreesCelsius" href="#" className="inactive" onClick={showCelsius}>°C</a>|
+        <a id="degreesFahr" href="#" className="active" >°F</a>
             </span>
         </>
     }
