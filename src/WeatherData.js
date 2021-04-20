@@ -3,7 +3,6 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import WeatherIcon from './WeatherIcon';
 import Col from 'react-bootstrap/Col';
-import WeatherTemperature from './WeatherTemperature';
 
 
 export default function WeatherData(props) {
@@ -24,7 +23,11 @@ export default function WeatherData(props) {
             </Row>
             <WeatherIcon className="weather-icon" code={props.data.icon} size={54} alt={props.data.description} />
             <Row className="temerature-block">
-                <WeatherTemperature temperature={props.data.temperature} />
+                <p className="temperature" id="current-temperature">
+                    {Math.round(props.data.temperature)}</p>
+                <span className="temperature-unit measure" id="temperature-meassure">
+                    <span id="degreesCelsius" className="active">°C</span>
+                </span>
             </Row>
             <Row className="row additional-weather-info">
                 <Col xs={4}>
@@ -39,7 +42,7 @@ export default function WeatherData(props) {
             </Row>
             <Row>
                 <Col xs={12}>
-                    <p className="addtional-forecast">Check the weather for next few hours</p>
+                    <p className="addtional-forecast">Check the weather forecast</p>
                 </Col>
             </Row>
         </div>
