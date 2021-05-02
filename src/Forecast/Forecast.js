@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './forecast.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import axios from 'axios';
 import WeatherForecastDay from './WeatherForecastDay';
 
@@ -32,21 +30,21 @@ export default function Forecast(props) {
         return (
             <div className="forecast-block">
 
-                <Row className="forecast-items">
+                <div className="forecast-items">
                     {forecast.map(function (dailyForecast, index) {
                         if (index < 4) {
                             return (
 
-                                <Col xs={2} key={index}>
+                                <div key={index}>
                                     <WeatherForecastDay data={dailyForecast} />
-                                </Col>
+                                </div>
                             );
 
                         } else {
                             return null;
                         }
                     })}
-                </Row>
+                </div>
             </div>
         );
 

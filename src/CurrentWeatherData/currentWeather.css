@@ -1,0 +1,71 @@
+.weather-info {
+    margin-top: 4rem;
+}
+
+.weather-data-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.temperature-data {
+    display: flex;
+}
+
+.temperature {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-left: 1rem;
+}
+
+.measure {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+}
+
+
+.wind-humidity-block {
+    display: flex;
+}
+
+
+
+.weather-icon {
+    width: 1.5rem;
+}
+
+#wind-speed {
+
+    margin-right: 1rem;
+}
+
+#wind-speed,
+#humidity {
+    font-weight: 800;
+}
+
+
+
+/* @media (min-width: 768px) {
+
+    .temerature-block,
+    .additional-weather-info,
+    .city-name,
+    .addtional-forecast,
+    .Search,
+    .weather-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        text-align: left;
+    }
+}  */
+
+
+@media (min-width: 768px) {
+    .weather-data-rows {
+        flex-direction: row
+    }
+}

@@ -12,7 +12,6 @@ export default function Footer() {
 
             <Row>
                 <Col xs={12}>
-                    <p>Weather last updated on Sunday 20:00</p>
                     <p>Open Source on <a target="_blank" rel="noreferrer" href={"https://github.com/sintija/shecodes-weather-app-react"}> Github </a> by Sintija</p>
                 </Col>
             </Row>

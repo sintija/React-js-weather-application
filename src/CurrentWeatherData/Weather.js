@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import WeatherData from './WeatherData';
-import Forecast from './Forecast';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import './currentWeather.css';
 import axios from "axios";
 import "./search.css";
-import './index.css';
-
+import '../index.css';
 
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
@@ -28,10 +26,11 @@ export default function Weather(props) {
             humidity: response.data.main.humidity,
             // weatherIconUrl: 'http://openweathermap.org/img/wn/01d@2x.png',
             icon: response.data.weather[0].icon,
-            date: new Date(response.data.dt * 1000)
-
+            date: new Date(response.data.dt * 1000),
+            illustration: response.data.weather[0].icon
         });
     }
+
 
     function search() {
         //city
@@ -59,19 +58,18 @@ export default function Weather(props) {
         return (
             <div className="Search">
                 <Form onSubmit={handleSubmit}>
-                    <Form.Row className="align-items-center">
-                        <Col xs={8} className="my-1">
+                    <Form.Row className="align-items-center form-row">
+                        <Col xs={8}>
                             <p className="small-message">Check for the weather</p>
                             <Form.Control id="inlineFormInputName" placeholder="" onChange={handleCityChange} />
                         </Col>
-
-                        <Col xs={2} className="my-1">
+                        <Col xs={2}>
                             <Button className="search-button" type="submit">Search</Button>
                         </Col>
                     </Form.Row>
                 </Form>
                 <WeatherData data={weatherData} />
-                <Forecast coordinates={weatherData.coordinates} />
+                {/* <Forecast coordinates={weatherData.coordinates} /> */}
             </div>
 
         );

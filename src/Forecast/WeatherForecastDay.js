@@ -1,5 +1,5 @@
 import React from 'react'
-import WeatherIcon from './WeatherIcon';
+import WeatherIcon from '../CurrentWeatherData/WeatherIcon';
 import Col from 'react-bootstrap/Col';
 
 export default function WeatherForecastDay(props) {

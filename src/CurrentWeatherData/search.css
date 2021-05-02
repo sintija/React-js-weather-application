@@ -1,14 +1,9 @@
-.Search {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
+.form-row {
+    justify-content: center;
+    margin-top: 3rem;
 }
 
-.Search form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .Search .small-message {
     color: #32364D;
