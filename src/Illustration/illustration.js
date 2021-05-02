@@ -1,7 +1,6 @@
 import React from 'react';
 import './illustration.css';
 import Image from 'react-bootstrap/Image';
-import Col from 'react-bootstrap/Col';
 import ImgCold from '../illustrationImg/cold.png';
 import ImgSunny from '../illustrationImg/sunny.png';
 import ImgNight from '../illustrationImg/night.png';
@@ -68,6 +67,7 @@ export default function Illustration(props) {
                     illustrationImg = ImgMisty;
                 }
                 break;
+            default: illustrationImg = ImgCloudy;
         }
         return illustrationImg;
     }

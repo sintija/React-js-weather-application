@@ -1,5 +1,8 @@
 .weather-info {
-    margin-top: 4rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .weather-data-rows {
@@ -67,5 +70,12 @@
 @media (min-width: 768px) {
     .weather-data-rows {
         flex-direction: row
+    }
+
+    .weather-info {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

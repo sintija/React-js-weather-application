@@ -7,6 +7,8 @@ import './currentWeather.css';
 import axios from "axios";
 import "./search.css";
 import '../index.css';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
@@ -76,7 +78,12 @@ export default function Weather(props) {
 
     } else {
         search();
-        return "Loading";
+        return (
+            <div className="loader">
+                <Loader type="Hearts" color="#00BFFF" height={80} width={80} />
+            </div>
+
+        )
     }
 
 }

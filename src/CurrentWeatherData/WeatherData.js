@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Raindrops from '../illustrationImg/raindrops.svg';
 import Winds from '../illustrationImg/winds.svg';
 import Forecast from '../Forecast/Forecast';
+import Footer from '../Footer/Footer'
 
 
 export default function WeatherData(props) {
@@ -42,17 +43,13 @@ export default function WeatherData(props) {
                     <div>
                         <Forecast coordinates={props.data.coordinates} />
                     </div>
-
-
-
-
-
                 </Col>
                 <Col xs={12} md={6}>
                     <Illustration iconCode={props.data} />
                 </Col>
             </div>
-        </div >
+            <Footer />
+        </div>
     );
 
 }    
